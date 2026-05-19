@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Configuracoes principais da pagina -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OZ-BURGER</title>
+
+    <!-- Arquivo de estilos do projeto -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Area superior com logo, slogan e botoes de acao -->
+    <div class="container-button">
+        <h1 class="logo">
+            🔥 OZ BURGER
+        </h1>
+        <p class="slogan">
+            Burgers artesanais feitos na hora
+        </p>
+        <button class="show-itens">Nosso Cardápio</button>
+        <button class="discount">Disconto com CUPOM</button>
+        <button class="sum-products">Valor total</button>
+        <button class="filter-vegan">Veganos</button>
+    </div>
+
+    <!-- Secao de destaque inicial -->
+    <section class="hero">
+
+        <div>
+            <h1>O burger mais absurdo da cidade 🍔</h1>
+
+            <p>
+                Artesanal, suculento e entregue quentinho.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- Lista onde os produtos do cardapio sao exibidos -->
+    <ul>
+        <!--   <li>
+            <img src="./assets/bacon-egg.png">
+            <p>X-Bacon Egg</p>
+            <p class="item-price">R$ 39,00</p>
+        </li> -->
+
+        <!-- Produto exibido inicialmente na tela -->
+        <li>
+
+            <span class="badge">MAIS PEDIDO</span>
+
+            <img src="./assets/xsalada.jpeg">
+
+            <p>X-Salada</p>
+
+            <p class="item-price">R$ 30,00</p>
+
+        </li>
+    </ul>
+</body>
+
+<!-- Arquivo com os dados dos produtos -->
+<script src="./products.js"></script>
+
+<!-- Arquivo com a logica da pagina -->
+<script src="./script.js"></script>
+
+</html>

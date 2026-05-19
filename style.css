@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reset geral e fonte padrao do site */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Cabecalho com logo centralizada */
+header{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Fundo principal da pagina */
+body {
+    background: linear-gradient(to bottom, #121212, #000000);
+}
+
+/* Estilo da marca/logo */
+.logo{
+    color: white;
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+/* Area que agrupa os botoes de filtro */
+.container-button{
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #121212;
+    margin-top: 0;
+    padding: 35px;
+}
+
+/* Aparencia padrao dos botoes */
+button{
+   background: #ff6b00;
+   border: none;
+   padding: 12px 18px;
+   border-radius: 12px;
+   color: white;
+   font-weight: bold;
+   cursor: pointer;
+   transition: 0.3s;
+}
+
+/* Efeito ao passar o mouse nos botoes */
+button:hover{
+    transform: translateY(-3px);
+    background: #ff8124;
+}
+
+/* Secao principal de destaque */
+.hero{
+    text-align: center;
+    padding: 80px 20px;
+}
+
+/* Titulo da secao hero */
+.hero h1{
+    color: #ffffff;
+}
+
+/* Grade de produtos */
+ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 200px;
+    max-width: 1000px;
+    margin: 60px auto;
+}
+
+
+/* Card de cada produto */
+li{
+    background: #1b1b1b;
+    border-radius: 15px;
+    padding: 10px;
+    transition: 0.3s;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    position: relative;
+}
+
+/* Efeito ao passar o mouse no card */
+li:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 8px 25px rgba(255,107,0,0.3);
+}
+
+/* Imagem dos produtos */
+img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Texto geral dos cards */
+p{
+    color: #ffffff;
+}
+
+/* Preco do produto */
+.item-price{
+    color:#ff8c00;
+    font-size:22px;
+}
+
+/* Etiqueta de destaque, como promocao ou categoria */
+.badge{
+    position: absolute;
+    top: 12px;
+    left: 12px;
+
+    background: #ff6b00;
+    color: white;
+
+    padding: 6px 10px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+
+/* Ajustes para telas menores */
+@media (max-width: 768px){
+
+    /* Botoes empilhados no celular */
+    .container-button{
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    /* Botao ocupa melhor a largura disponivel */
+    button{
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* Produtos em uma coluna no celular */
+    ul{
+        grid-template-columns: 1fr;
+        margin-top: 50px;
+        padding: 15px;
+    }
+
+    /* Limita a largura dos cards em telas pequenas */
+    li{
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    /* Imagens um pouco maiores no layout mobile */
+    img{
+        height: 220px;
+    }
+
+}
