@@ -6,6 +6,11 @@ Aplicação web de uma hamburgeria que oferece burgers artesanais feitos na hora
 
 **OZ BURGER** é um projeto desenvolvido durante o curso JavaScript da Dev Club. A aplicação permite aos clientes visualizar o cardápio, aplicar cupons de desconto, calcular o valor total e filtrar produtos veganos.
 
+## Preview
+
+![preview](./assets/site1.png)
+![preview](./assets/site2.png)
+
 ## Funcionalidades
 
 - 🍔 **Cardápio**: Exibe todos os produtos disponíveis com imagens, nomes e preços
